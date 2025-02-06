@@ -1,35 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
-/* Estilo general del contenedor */
+
 .landing-container {
   display: flex;
-  flex-direction: column; /* Apila los contenedores verticalmente */
-  align-items: center; /* Centra el contenido */
-  width: 100%;
+  flex-direction: column; /* Organiza el contenido en columna */
+  justify-content: center; /* Centra el contenido verticalmente */
+  align-items: center; /* Centra el contenido horizontalmente */
+  width: 100vw;
+  height: 100vh;
+  background-color: #f0f0f0; /* Cambia el color de fondo según necesites */
+  /*box-sizing: border-box;*/
 }
 
-/* Estilos de cada sección */
-.section {
-  width: 90%; /* Ocupa el 90% del ancho por defecto */
-  max-width: 1200px; /* No crece más allá de 1200px */
-  padding: 20px;
-  margin: 10px 0;
-  background-color: #f4f4f4;
+.landing-container2 {
+  display: flex;
+  flex-direction: column; /* Organiza el contenido en columna */
+  justify-content: center; /* Centra el contenido verticalmente */
+  align-items: center; /* Centra el contenido horizontalmente */
+  width: 100vw;
+  height: 100vh;
+  background-color: black; /* Cambia el color de fondo según necesites */
+ /* box-sizing: border-box;*/
+}
+
+
+
+/*.section {
+  width: 90%; 
+  max-width: 1200px;*/ 
+ /* padding: 20px;*/
+  /*margin: 10px 0;*/
+  /*background-color: #f4f4f4;
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
-}
+}*/
 
-/* Responsive para tablets */
+
 @media (max-width: 1024px) {
   .section {
-    width: 95%; /* Se hace más ancho en pantallas medianas */
+    width: 95%; 
   }
 }
 
-/* Responsive para celulares */
+
 @media (max-width: 768px) {
   .section {
-    width: 100%; /* Ocupa el 100% en pantallas pequeñas */
+    width: 100%; 
     padding: 15px;
   }
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Evita el desplazamiento horizontal */
 }
