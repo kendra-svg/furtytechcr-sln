@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './app.test.component.css'
 })
 export class AppTestComponent {
-  title = 'this is a test, not prod.Same as yesterday';
+  title = 'this is a test, not prod. Same as yesterday';
 
 }
