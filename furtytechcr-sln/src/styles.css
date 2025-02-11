@@ -2,15 +2,13 @@
 
 .landing-container {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   width: 100vw;
   height: auto;
   background-color: dimgray;
   padding: 15px;
-
-  
 }
 
 .landing-container2 {
@@ -27,26 +25,34 @@
 
 @media (max-width: 1024px) {
   .section {
-    width: 95%; 
+    width: 95%;
   }
 }
 
 
 @media (max-width: 768px) {
   .section {
-    width: 100%; 
+    width: 100%;
     padding: 15px;
   }
 }
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden; 
+
+
+html {
+  position: relative;
+  min-height: 100%;
 }
 
+body {
+  margin-bottom: 60px;
+}
 img {
   max-width: 100%;
   height: auto;
 }
+
+.bg-purple {
+  --bs-bg-opacity: 1;
+  background-color: rgb(165, 137, 255) !important;
+}
+
