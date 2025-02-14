@@ -1,0 +1,33 @@
+<header>
+
+  <div class="bg-purple">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="container-fluid">
+        <a class="navbar-brand" routerLink="/">FuryTechCR</a>
+        <button class="navbar-toggler ms-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" (click)="collapsed = !this.collapsed">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="navbarSupportedContent"
+             [ngClass]="{ collapse: collapsed, 'navbar-collapse': true }">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link active " routerLink="/">Home</a>
+              <a class="nav-link text-dark" routerLink="/nosotros">Nosotros</a>
+              <a class="nav-link text-dark" routerLink="/nosotros">Services</a>
+              <a class="nav-link text-dark" routerLink="/contacto">Contacto</a>
+            </div>
+          </div>
+          <div class="navbar-actions">
+            <!-- Add login/logout buttons or user-related actions here -->
+          </div>
+        </div>
+</nav>
+  </div>
+</header>
+
+
+
+
+<router-outlet></router-outlet>
+
+
