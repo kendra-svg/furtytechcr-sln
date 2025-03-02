@@ -65,7 +65,16 @@ img {
 
 .bg-purple {
   --bs-bg-opacity: 1;
-  background-color: rgb(165, 137, 255) !important;
+  background-color: rgb(165, 137, 255) !important
 }
 
 
+.img-cont-text {
+    display: inline-block;
+
+}
+
+.text-title {
+    padding: 5px;
+    margin: 3px;
+}
